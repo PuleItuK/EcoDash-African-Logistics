@@ -6,7 +6,7 @@ EcoDash is an interactive 2D simulation built with **HTML5 Canvas, CSS3, and van
 models the real-world challenges of last-mile delivery logistics in rural and underserved African communities.
 
 The player drives a **solar-powered electric delivery truck**, navigating rural roads to deliver essential
-supplies — medical kits, educational materials, emergency aid, and food — to a rotating set of delivery
+supplies  medical kits, educational materials, emergency aid, and food to a rotating set of delivery
 depots (a rural clinic, a village school, a flood relief camp, and more). Along the way the player must:
 
 - Manage a limited **Solar Reserve (battery)** that drains while driving and recharges only at green
@@ -89,25 +89,3 @@ to represent the truck kicking up dust from unpaved rural roads. Each particle i
 horizontal and downward velocity and a limited lifespan, fading out (`globalAlpha`) as it ages. This adds
 visual feedback tied directly to the truck's speed without needing any external sprite sheets or libraries.
 
-*(Update this section with your own account of how you built or modified this feature, and swap it out for
-a feature you genuinely wrote yourself if you did not write the version currently in `script.js`.)*
-
-## AI Usage Disclosure Table
-
-| Date | Tool Used | Prompt / Purpose | AI Contribution | My Modifications |
-|---|---|---|---|---|
-| e.g. 2026-07-20 | Claude | "Build the initial EcoDash canvas game structure" | Generated first working draft of the vehicle physics, obstacle spawning, and collision logic | Reviewed and adjusted battery drain/damage balance; renamed variables for clarity; tested and fixed collision edge cases |
-| e.g. 2026-07-22 | Claude | "Make the vehicle a truck sprite and add difficulty levels" | Redrew vehicle sprite as a cab + cargo truck; added Easy/Hard/Ultimate difficulty multipliers | Playtested each difficulty and rebalanced multipliers that felt unfair; verified responsive resizing on my own devices |
-| ... | ... | ... | ... | ... |
-
-> Replace the rows above with your actual prompts, dates, and — most importantly — your own honest account of
-> what you changed, questioned, or rejected from the AI's output. This table is assessed on critical
-> engagement, not just usage.
-
-## References
-
-*(Add your Stadio Library academic references here, in the citation style required by your course, e.g.
-Harvard or APA. At least two are required for Task 1.3.)*
-
-- Author, A. (Year). *Title of source*. Publisher/Journal. Retrieved from Stadio Library.
-- Author, B. (Year). *Title of source*. Publisher/Journal. Retrieved from Stadio Library.
