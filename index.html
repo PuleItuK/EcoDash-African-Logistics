@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EcoDash: African Logistics Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="c"></canvas>
+
+  <div id="hud">
+    <div class="box">Dist: <span id="distTxt">0</span>m<br>Score: <span id="scoreTxt">0</span></div>
+    <div class="box">Solar Reserve
+      <div id="battWrap"><div id="battFill"></div></div>
+    </div>
+  </div>
+  <div id="missionBox">Mission 1 →</div>
+  <div id="warn"></div>
+  <canvas id="miniMap" width="60" height="86"></canvas>
+  <div id="controls">Arrows/WASD: steer &amp; thrust · P: pause · M: mute</div>
+
+  <div id="startScreen" class="screen">
+    <h1>EcoDash</h1>
+    <p>Drive a solar powered delivery truck across rural infrastructure. Dodge potholes, wildlife, fallen
+    trees, floods and construction. Recharge at green Microgrid Zones, reach each Depot, and watch out for
+    load shedding, wind and rain.</p>
+    <p><b>Choose difficulty</b></p>
+    <div id="diffRow">
+      <button class="easy" data-d="easy">Easy</button>
+      <button class="hard" data-d="hard">Hard</button>
+      <button class="ultimate" data-d="ultimate">Ultimate</button>
+    </div>
+    <p style="margin-top:6px"><b>Top Scores</b></p>
+    <ol id="hsListStart"></ol>
+  </div>
+
+  <div id="pauseScreen" class="screen hidden">
+    <h1>Paused</h1>
+    <button id="resumeBtn">Resume</button>
+  </div>
+
+  <div id="overScreen" class="screen hidden">
+    <h1 id="overTitle">Delivery Ended</h1>
+    <p id="overStats"></p>
+    <p><b>Top Scores</b></p>
+    <ol id="hsListOver"></ol>
+    <button id="restartBtn">Try Again (same difficulty)</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
